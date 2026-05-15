@@ -5,7 +5,7 @@ if (req.method === 'GET') {
     <html>
     <head>
     <meta name="google-site-verification" 
-    content="<meta name="google-site-verification" content="QvJCWKw5e7-N9B0MKUDHQz6jaXpvh9fWLBh4ml_p-EI" />">
+    content="<meta name="google-site-verification" content="QvJCWKw5e7-N9B0MKUDHQz6jaXpvh9fWLBh4ml_p-EI"/>">
     </head>
     <body>Signal Site</body>
     </html>
