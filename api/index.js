@@ -1,4 +1,16 @@
-export default async function handler(req, res) {
+// Verification endpoint
+if (req.method === 'GET') {
+  res.setHeader('Content-Type', 'text/html');
+  return res.status(200).send(`
+    <html>
+    <head>
+    <meta name="google-site-verification" 
+    content="<meta name="google-site-verification" content="QvJCWKw5e7-N9B0MKUDHQz6jaXpvh9fWLBh4ml_p-EI" />">
+    </head>
+    <body>Signal Site</body>
+    </html>
+  `);
+}export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
